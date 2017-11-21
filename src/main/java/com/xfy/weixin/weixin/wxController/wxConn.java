@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -54,7 +55,23 @@ public class wxConn {
                     if (messageUtil.MESSAGE_SUBSCRIBE.equals(eventType)){
                         message=messageUtil.initText(toUserName,fromUserName,messageUtil.menuText());
                     }
-                }
+                    else if (messageUtil.MESSAGE_CLICK.equals(eventType)){
+                        message=messageUtil.initText(toUserName,fromUserName,messageUtil.menuText());
+                    }
+                    else if (messageUtil.MESSAGE_VIEW.equals(eventType)){
+                        String url=map.get("EventKey");
+                        message=messageUtil.initText(toUserName,fromUserName,url);
+                    }
+                    else if (messageUtil.MESSAGE_SCANCODE.equals(eventType)){
+                        String url=map.get("EventKey");
+                        message=messageUtil.initText(toUserName,fromUserName,url);
+                    }
+            }
+            else if (messageUtil.MESSAGE_Location.equals(msgType)){
+                String label=map.get("Label");
+                System.out.println(map);
+                message=messageUtil.initText(toUserName,fromUserName,label);
+            }
             System.out.println(message);
             return message;
         } catch (Exception e) {
