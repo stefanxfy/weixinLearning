@@ -29,6 +29,9 @@ public class messageUtil {
     public static final String MESSAGE_Unsubscribe="unsubscribe";
     public static final String MESSAGE_CLICK="CLICK";
     public static final String MESSAGE_VIEW="VIEW";
+    public static final String MESSAGE_SCANCODE="scancode_push";
+    public static final String MESSAGE_LOCATION="location";
+
 
     /*
     * 将xml转化为map集合
