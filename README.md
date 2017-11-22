@@ -93,7 +93,7 @@ public static String getSha1(String str){
 ### **==微信开发从这才刚刚开始，你已经打开微信开发的大门，就差走进去了==**
 
 [获取token第一步教程](https://github.com/StefanPython/weixinLearning/blob/master/getToken.md)
-
+[自定义菜单的创建，查询，删除](https://github.com/StefanPython/weixinLearning/blob/master/menuDIY.md)
 
 
 
