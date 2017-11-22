@@ -1,6 +1,7 @@
 # 自定义菜单的创建、查询、删除
 
-#### 新建接口：http请求方式：POST（请使用https协议） https://api.weixin.qq.com/cgi-bin/menu/create?access_token=ACCESS_TOKEN
+#### 新建接口：
+> http请求方式：POST（请使用https协议） https://api.weixin.qq.com/cgi-bin/menu/create?access_token=ACCESS_TOKEN
 #### 自定义菜单能够帮助公众号丰富界面，让用户更好更快地理解公众号的功能。开启自定义菜单后，公众号界面如图所示：
 ![image](http://mmbiz.qpic.cn/mmbiz_jpg/PiajxSqBRaEIQxibpLbyuSK4TssiajqknJS6dACV5IoTxppdoyfGEYScCFMqV3dgFzf2tGqy2IiciaysTlaZt6zchibA/0?wx_fmt=jpeg)
 
