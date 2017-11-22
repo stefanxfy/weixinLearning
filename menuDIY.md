@@ -250,7 +250,7 @@ private static final String CREATE_MENU_URL="https://api.weixin.qq.com/cgi-bin/m
         return result;
     }
 ```
-#### 这里我们对菜单的自定义创建就基本可以了，因为，对菜单的查询与删除很简单，就一个接口，但是这仅仅是入门。
+#### 这里我们对菜单的自定义创建就基本可以了，因为，对菜单的查询与删除很简单，就一个接口，所以就一起写了，但是这仅仅是入门。
 
 ### 查询接口：
 > http请求方式：GET
